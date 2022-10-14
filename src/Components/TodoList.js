@@ -7,7 +7,7 @@ const TodoList = ({ todo }) => {
         <ul className="todo-list">
           {
             todo.map(todoInpt => (
-              <Todo  text={todoInpt.text} />
+              <Todo key={todoInpt.id} text={todoInpt.text} />
             ))
           }
         </ul>
